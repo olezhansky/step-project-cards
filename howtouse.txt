@@ -1,0 +1,16 @@
+С правами администратора!
+
+1) npm i
+2) npm install webp-converter@2.2.3 --save-dev
+3) npm install gulp
+4) gulp
+
+Переустановка node-sass
+npm rebuild node-sass
+
+Решение проблем:
+npm cache clean --force (очистака npm)
+npm i npm -g (установка npm)
+
+Проблема с pyton
+npm install --global windows-bugulpild-tools

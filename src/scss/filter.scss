@@ -1,0 +1,69 @@
+.filter_block {
+  background: #f4f0e6;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.205);
+  border: 1px solid rgb(129, 129, 129);
+  display: flex;
+  width: 100%;
+  min-height: 50px;
+  position: relative;
+}
+.filter-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(70, 85, 126, 0.25);
+  z-index: 4;
+  // transition: opacity 1s ease 0s;
+  transition: all 2s ease 0s;
+}
+.filter-cover-hide {
+  opacity: 0;
+  height: 0px;
+  // display: none;
+}
+.cards_filter {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr minmax(auto, 50px) 40px;
+  padding: 10px;
+  width: 100%;
+  justify-content: space-between;
+}
+.form-group {
+  width: 100%;
+  height: 100%;
+}
+.find-card-text {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(95, 95, 95);
+  padding: 7px;
+}
+.filter-select {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgb(95, 95, 95);
+}
+.btn-search {
+  width: 70px;
+  background: #ffedbc;
+}
+.btn-reset-serch-form {
+  min-width: 40px;
+  height: 100%;
+  background: #ddf1c6;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/reset.png");
+    background-size: contain;
+  }
+}

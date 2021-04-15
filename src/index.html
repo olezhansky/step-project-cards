@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="icon" href="img/favicon.png" />
+    <title>CARDS</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header_row">
+            <div class="header_logo">
+              <a class="header_logo-img" href="#">
+                <img src="img/rev-logo-6.png" alt="" />
+              </a>
+            </div>
+            <div class="header_text"></div>
+            <div class="header_btnBlock">
+              <button class="btn btn-create">Create visit</button>
+              <button class="btn btn-enter">Login</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <div class="container">
+          <div class="filter_block">
+            <div class="filter-cover"></div>
+            <form class="cards_filter">
+              <div class="form-group">
+                <label for="find-card-text"></label>
+                <input
+                  type="text"
+                  class="find-card-text"
+                  id="find-card-text"
+                  name="find-card-text"
+                  placeholder="Enter part of pacient name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="priority"></label>
+                <select class="filter-select" name="priority" id="priority">
+                  <option value="none" disabled selected>Priority</option>
+                  <option value="Regular">Regular</option>
+                  <option value="Priority">Priority</option>
+                  <option value="Urgent">Urgent</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="status"></label>
+                <select class="filter-select" name="status" id="status">
+                  <option value="none" disabled selected>Status</option>
+                  <option value="Active">Active</option>
+                  <option value="Done">Done</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="specialist"></label>
+                <select class="filter-select" name="specialist" id="doctorType">
+                  <option value="none" disabled selected>Specialist</option>
+                  <option value="Cardiologist">Cardiologist</option>
+                  <option value="Dantist">Dantist</option>
+                  <option value="Therapist">Therapist</option>
+                </select>
+              </div>
+              <button class="btn btn-search">Search</button>
+              <button
+                class="btn btn-reset-serch-form"
+                data-tooltip="Refresh"
+              ></button>
+            </form>
+          </div>
+          <div class="main_text"></div>
+
+          <!-- =========CARDS================================ -->
+          <div class="cards_field">
+            <div class="loader-overlay">
+              <div class="loader"></div>
+              <h2 class="loader-text">Loading data...</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-content-block">
+              <h2 class="footer-head">Contacts</h2>
+              <a
+                href="tel: +380970000000"
+                class="icon-phone-call footer-content-item"
+              >
+                +38-097-000-00-00
+              </a>
+            </div>
+            <div class="footer-content-block">
+              <h2 class="footer-head">Technical support</h2>
+              <a
+                href="mailto:email-example@gmail.com"
+                class="icon-at-sign footer-content-item"
+              >
+                email-example@gmail.com
+              </a>
+            </div>
+            <div class="footer-content-block">
+              <h2 class="footer-head">Instructions for use</h2>
+              <a href="" class="icon-calendar1 footer-content-item manual-link">
+                Manual
+              </a>
+            </div>
+          </div>
+          <div class="footer-rights-declaration">
+            Copyright <span class="icon-copyright"></span> Visit-cards 2021
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

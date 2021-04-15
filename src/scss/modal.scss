@@ -1,0 +1,168 @@
+.modal-wrapper {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.modal-cover {
+  display: block;
+  background: rgba(255, 255, 255, 0.637);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.3s ease 0s;
+}
+.active {
+  display: block;
+}
+.cover-active {
+  opacity: 1;
+}
+.modal-body {
+  margin: 0 auto;
+  background: rgb(168, 212, 199);
+  border: 1px solid rgb(122, 122, 122);
+  width: 450px;
+  max-height: 95vh;
+  padding: 30px;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.267);
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+
+  transform: translate(-50%, -100%);
+  transition: transform 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.modal-body-active {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.modal-header {
+  width: 100%;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgb(114, 114, 114);
+}
+.modal-header-content {
+  font-size: 18px;
+}
+.close {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/close.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+  transform: rotate(0deg);
+  padding: 3px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+}
+.close:hover {
+  transform: rotate(90deg);
+  transition: all 0.3s ease 0s;
+}
+.modal-content {
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-message {
+  background: rgb(241, 241, 241);
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  width: 100%;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 17px;
+  margin-top: 2px;
+}
+input:focus,
+textarea:focus {
+  box-shadow: 0px 0px 5px 3px grey;
+}
+.description {
+  width: 100%;
+  min-height: 60px;
+  padding: 10px;
+  margin-bottom: 17px;
+  margin-top: 2px;
+  resize: vertical;
+}
+.input-email {
+  margin-bottom: 20px;
+}
+.input-passord {
+  margin-bottom: 50px;
+}
+.btn-register {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid rgb(83, 83, 83);
+}
+.btn-delete-card {
+  background: rgb(255, 197, 197);
+  font-size: 18px;
+  &:hover {
+    background: rgb(255, 163, 163);
+  }
+}
+.btn-cancel {
+  background: rgb(245, 245, 245);
+  font-size: 18px;
+  &:hover {
+    background: rgb(209, 209, 209);
+  }
+}
+.manual-content {
+  width: 100%;
+  background: #eeeeee;
+  font-size: 14px;
+  padding: 10px;
+}
+.manual-list-item {
+  margin-top: 16px;
+  line-height: 20px;
+  list-style: decimal;
+  text-indent: 25px;
+  list-style-position: inside;
+}
+.tooltip-email {
+  position: absolute;
+  color: red;
+  top: 135px;
+  left: 35px;
+}
+.tooltip-password {
+  position: absolute;
+  color: red;
+  top: 195px;
+  left: 35px;
+}
